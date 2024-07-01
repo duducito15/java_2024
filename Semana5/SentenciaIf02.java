@@ -1,6 +1,6 @@
 package Semana5;
 
-public class SenteciaIf02 {
+public class SentenciaIf02 {
     public static void main(String[] args) {
         int numero = 0;
         
