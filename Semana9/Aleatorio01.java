@@ -5,7 +5,7 @@ public class Aleatorio01 {
         System.out.println("Generar 10 números aleatorios");
 
         for (int i = 1; i <11 ; i++) {
-            //System.out.println(Math.random()); 
+           // System.out.println(Math.random()); 
 
             //System.out.println(Math.random()*10);
 
