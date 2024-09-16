@@ -13,13 +13,35 @@ public class EjerArrayBi03 {
          */
 
         int[][] array = new int[6][10];
-        Random random = new Random();
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 10; j++) {
-                array[i][j] = random.nextInt(0, 1001);
-                System.out.printf("%7d", array[i][j]);
+
+        int minimo = 1000;
+        int maximo = 0;
+
+        for (int fila = 0; fila < 6; fila++) {
+            for (int columna = 0; columna < 10;columna++) {
+                array[fila][columna] = (int) (Math.random() * 1000) + 0;
+                System.out.printf("%7d", array[fila][columna]);
             }
             System.out.println();
         }
+
+        for (int fila = 0; fila < 6; fila++) {
+            for (int columna = 0; columna < 10;columna++) {
+               
+                // calcula el minimo valor del array
+                if (array[fila][columna] < minimo) {
+                    minimo = array[fila][columna];
+                }
+
+                // calcula el maximo valor del array
+                if (array[fila][columna] > maximo) {
+                    maximo = array[fila][columna];
+                }
+                
+            }
+        }
+
+        System.out.println("El mínimo es: "+minimo);
+        System.out.println("El máximo es: "+maximo);
     }
 }
