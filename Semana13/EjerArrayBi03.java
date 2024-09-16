@@ -17,6 +17,11 @@ public class EjerArrayBi03 {
         int minimo = 1000;
         int maximo = 0;
 
+        int filaMinimo = 0;
+        int columnaMinimo = 0;
+        int filaMaximo = 0;
+        int columnaMaximo = 0;
+
         for (int fila = 0; fila < 6; fila++) {
             for (int columna = 0; columna < 10;columna++) {
                 array[fila][columna] = (int) (Math.random() * 1000) + 0;
@@ -31,17 +36,22 @@ public class EjerArrayBi03 {
                 // calcula el minimo valor del array
                 if (array[fila][columna] < minimo) {
                     minimo = array[fila][columna];
+                    filaMinimo = fila;
+                    columnaMinimo = columna;
                 }
 
                 // calcula el maximo valor del array
                 if (array[fila][columna] > maximo) {
                     maximo = array[fila][columna];
+                    filaMaximo = fila;
+                    columnaMaximo = columna;
                 }
-                
             }
         }
 
         System.out.println("El mínimo es: "+minimo);
+        System.out.println("Fila: "+ filaMinimo + ", Columna: "+ columnaMinimo);
         System.out.println("El máximo es: "+maximo);
+        System.out.println("Fila: "+ filaMaximo + ", Columna: "+ columnaMaximo);
     }
 }
