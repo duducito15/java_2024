@@ -17,4 +17,18 @@ public class Matematicas {
         return Math.pow(lado, 2);
     }
 
+    //Funcion que calcula el area de un circulo
+    public static double areaCirculo(double radio){
+        return 3.1416 * radio * radio;
+    }
+
+    //Funcion que calcula el area de un triangulo
+    public static double areaTriangulo(double base, double altura){
+        return base * altura;
+    }
+    //Funcion que calcula el area de un Rectangulo
+    public static double areaRectangulo(double base, double altura){
+        return (base * altura)/2;
+    }
+
 }
