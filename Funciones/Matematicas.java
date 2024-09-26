@@ -11,4 +11,10 @@ public class Matematicas {
         }
         return true;
     }
+
+    //Funcion que calcula el area de un cuadrado
+    public static double areaCuadrado(double lado){
+        return Math.pow(lado, 2);
+    }
+
 }
