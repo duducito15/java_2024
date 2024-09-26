@@ -16,6 +16,16 @@ public class Funcion2 {
 
         op = Integer.parseInt(System.console().readLine());
 
-        
+        switch (op) {
+            case 1:
+                System.out.println("Ingrese el lado del cuadrado: ");
+                l = Double.parseDouble(System.console().readLine());
+                System.out.println("El area del cuadrado es: "+Matematicas.areaCuadrado(l));
+                break;
+
+            default:
+                break; 
+        }
+
     }
 }
